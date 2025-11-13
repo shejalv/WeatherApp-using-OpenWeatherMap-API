@@ -1,5 +1,8 @@
 🌦️ Weather App
 
+<img width="1919" height="870" alt="Screenshot 2025-11-13 161156" src="https://github.com/user-attachments/assets/e7a46f68-7dc2-42d6-864c-c35c0695efd9" />
+
+
 A modern, responsive, and user-friendly Weather Application built with React.js that provides live weather updates for any city using the OpenWeatherMap API.
 
 This app is designed with a beautiful gradient background, glassmorphism-style weather card, and smooth animations to give users a pleasant and interactive experience.
@@ -138,5 +141,4 @@ Frontend Developer | Java Enthusiast | Tech Explorer
 
 This project is open-source and available under the MIT License.
 
-<img width="1919" height="870" alt="Screenshot 2025-11-13 161156" src="https://github.com/user-attachments/assets/ad9daba9-bc65-4077-9450-a2011b6e07ae" />
 
