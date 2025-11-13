@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+🌦️ Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive, and user-friendly Weather Application built with React.js that provides live weather updates for any city using the OpenWeatherMap API.
 
-## Available Scripts
+This app is designed with a beautiful gradient background, glassmorphism-style weather card, and smooth animations to give users a pleasant and interactive experience.
 
-In the project directory, you can run:
+🚀 Features
 
-### `npm start`
+✅ Search weather by city name
+✅ Live data from OpenWeatherMap API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Displays:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+City name
 
-### `npm test`
+Temperature (°C)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Humidity (%)
 
-### `npm run build`
+Weather condition (Clear, Cloudy, Rainy, etc.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Weather icons / emojis
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ Loading spinner during fetch
+✅ Error message if city not found
+✅ Gradient background with glassmorphism design
+✅ Fully responsive for mobile and desktop
+✅ Clean typography and modern UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧩 Technologies Used
 
-### `npm run eject`
+React.js (Frontend Framework)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Axios (for API requests)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CSS3 (for styling and animations)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OpenWeatherMap API (for live weather data)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📁 Folder Structure
+weather-app/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Weather.js
+│   │   ├── WeatherCard.js
+│   │   ├── SearchBox.js
+│   │   ├── Weather.css
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── .env
+├── package.json
+└── README.md
 
-## Learn More
+⚙️ Installation and Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Follow these simple steps to set up and run the project on your local machine.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository
+git clone https://github.com/your-username/weather-app.git
 
-### Code Splitting
+2. Navigate to the project folder
+cd weather-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install dependencies
+npm install
 
-### Analyzing the Bundle Size
+4. Create .env file in the root directory
+REACT_APP_WEATHER_API_KEY=your_openweathermap_api_key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+⚠️ Make sure your variable name starts with REACT_APP_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. Start the development server
+npm start
 
-### Advanced Configuration
+🌍 API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Base URL: https://api.openweathermap.org/data/2.5/weather
 
-### Deployment
+Example Request:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=YOUR_API_KEY&units=metric
 
-### `npm run build` fails to minify
+💡 React Concepts Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+useState → To store city, weather data, and error states
+
+useEffect → To handle side effects (API calls)
+
+Props → To pass data between components
+
+Conditional Rendering → To display loading, error, or weather data dynamically
+
+🎨 UI Design Highlights
+
+Glassmorphism Weather Card with blurred background
+
+Soft Gradient Backgrounds (Sky blue → Purple tones)
+
+Rounded Corners & Shadows for modern look
+
+Google Font: Poppins / Roboto
+
+Responsive Layout: Adapts to mobile, tablet, and desktop
+
+Subtle Animations: Fade-in for weather results
+
+🧠 Example Output
+
+Input: Paris
+Output:
+☀️ Paris
+Temperature: 25°C
+Humidity: 58%
+Condition: Clear Sky
+
+🪄 Future Enhancements
+
+Add 5-day weather forecast
+
+Display background images based on weather condition
+
+Add “Use My Location” (geolocation) support
+
+Include sunrise/sunset and wind speed details
+
+👩‍💻 Author
+
+Shejal Pandey
+B.Tech – Computer Science & Engineering
+Frontend Developer | Java Enthusiast | Tech Explorer
+
+📜 License
+
+This project is open-source and available under the MIT License.
+
+<img width="1919" height="870" alt="Screenshot 2025-11-13 161156" src="https://github.com/user-attachments/assets/ad9daba9-bc65-4077-9450-a2011b6e07ae" />
+
